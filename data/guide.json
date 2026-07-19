@@ -1,0 +1,270 @@
+{
+  "guide": {
+    "show": "Tennessee Crossroads",
+    "eyebrow": "A Crossroads Guide · 40 Years",
+    "titleHTML": "Whiskey & Walking-Horse Country<br><em>A Crossroads Road Trip</em>",
+    "city": "Whiskey & Walking-Horse Country",
+    "printTitle1": "Whiskey & Walking-",
+    "printTitle2": "Horse Country",
+    "sub": "Four decades of back-road stories along one easy loop — from Lynchburg's whiskey hollow through Tullahoma's hometown square to the walking-horse country around Shelbyville.",
+    "metaNote": "every one a real Crossroads segment",
+    "mapLede": "Every stop along the route, plotted town by town.",
+    "quote": "“Come travel the highways and by-ways of Tennessee.”",
+    "note": "We hope this guide leads you to new memories, a hidden gem, or someplace you’ve always meant to visit. Thanks for making Tennessee Crossroads part of your journey.",
+    "colophonHTML": "Tennessee Crossroads is a <b>Nashville PBS</b> production · Each place began as a story on the show"
+  },
+  "print": {
+    "coverImage": "brochure/cache/cover-whiskey-walking-horse.jpg",
+    "coverCaption": "Cascade Hollow, home of George Dickel — Tullahoma",
+    "map": {
+      "bounds": {
+        "west": -86.642,
+        "east": -86.12,
+        "centerLat": 35.384
+      },
+      "riverWide": [
+        "Duck"
+      ],
+      "riverWideIn": 0.2,
+      "waterLabel": {
+        "text": "Duck River",
+        "lat": 35.468,
+        "lng": -86.4
+      },
+      "areaLabels": [
+        {
+          "name": "LYNCHBURG",
+          "lat": 35.262,
+          "lng": -86.374
+        },
+        {
+          "name": "TULLAHOMA",
+          "lat": 35.345,
+          "lng": -86.225
+        },
+        {
+          "name": "SHELBYVILLE",
+          "lat": 35.507,
+          "lng": -86.46,
+          "big": true
+        },
+        {
+          "name": "NORMANDY",
+          "lat": 35.4518,
+          "lng": -86.235
+        },
+        {
+          "name": "WARTRACE",
+          "lat": 35.527,
+          "lng": -86.335
+        }
+      ],
+      "inset": {
+        "name": "Lynchburg",
+        "west": -86.393,
+        "east": -86.353,
+        "south": 35.272,
+        "north": 35.312,
+        "box": [
+          0.6,
+          4.1,
+          6.5,
+          7.96
+        ]
+      },
+      "cartouche": [
+        0.6,
+        0.6,
+        6.5,
+        3.1
+      ],
+      "legend": [
+        0.6,
+        12.46,
+        6.5,
+        2.9
+      ],
+      "attrib": [
+        0.6,
+        15.66,
+        6.5,
+        1.2
+      ]
+    }
+  },
+  "sections": [
+    {
+      "key": "lynchburg",
+      "title": "Lynchburg",
+      "intro": "The hollow that whiskey built — a courthouse square of smokehouses, candy kitchens, and cave-spring history.",
+      "stops": [
+        {
+          "name": "Jack Daniel's Distillery",
+          "host": "Joe Elmore",
+          "lat": 35.284777452498524,
+          "lng": -86.37056274213023,
+          "blurb": "From the 1988 archives: the late Roger Brashears, Jack Daniel's longtime ambassador, walks us through the cave spring, the charcoal mellowing, and the hollow where it all began.",
+          "addr": "133 Lynchburg Hwy",
+          "phone": "(931) 759-6357",
+          "site": "jackdaniels.com",
+          "siteUrl": "https://www.jackdaniels.com/en-us/",
+          "link": "https://tennesseecrossroads.org/jack-daniel-distillery-tour-with-roger-brashears-jr/",
+          "img": "https://tennesseecrossroads.org/wp-content/uploads/2021/02/jack-daniel-distillery-tour-with-roger-brashears-jr.jpg"
+        },
+        {
+          "name": "Miss Mary Bobo's Boarding House",
+          "host": "Joe Elmore",
+          "lat": 35.281860270993036,
+          "lng": -86.37454161927265,
+          "blurb": "Joe Elmore visits the Lynchburg landmark where dinner is served boarding-house style — heaping platters passed around shared tables, with a hostess to keep the stories coming.",
+          "addr": "295 Main St",
+          "phone": "(931) 759-6154",
+          "site": "jackdaniels.com",
+          "siteUrl": "https://www.jackdaniels.com/en-us/Miss-Mary-Bobos-Restaurant",
+          "link": "https://tennesseecrossroads.org/miss-mary-bobos-boarding-house/",
+          "img": "https://tennesseecrossroads.org/wp-content/uploads/2021/02/miss-mary-bobos-boarding-house.jpg"
+        },
+        {
+          "name": "Barrel House BBQ",
+          "host": "Joe Elmore",
+          "lat": 35.28224424193548,
+          "lng": -86.37278025806452,
+          "blurb": "Just off the Lynchburg square, Barrel House BBQ smokes its meat low and slow in a shop full of whiskey-town character. Joe Elmore follows his nose inside.",
+          "addr": "105 Mechanic St S",
+          "phone": "(931) 759-5760",
+          "site": "barrelhousebbq.com",
+          "siteUrl": "https://www.barrelhousebbq.com/",
+          "link": "https://tennesseecrossroads.org/barrel-house-bbq/",
+          "img": "https://tennesseecrossroads.org/wp-content/uploads/2021/02/barrel-house-bbq.jpg"
+        },
+        {
+          "name": "Lynchburg Cake and Candy Company",
+          "host": "Tressa Bush",
+          "lat": 35.300988563327564,
+          "lng": -86.37456144865014,
+          "blurb": "Tressa Bush stops where Lynchburg's signature whiskey cakes are baked from a family recipe — dense, buttery, and finished with a splash of the town's most famous export.",
+          "addr": "134 Cashion Rd",
+          "phone": "(877) 759-7441",
+          "site": "lynchburgcakeandcandy.com",
+          "siteUrl": "https://www.lynchburgcakeandcandy.com/",
+          "link": "https://tennesseecrossroads.org/lynchburg-cake-and-candy-company/",
+          "img": "https://tennesseecrossroads.org/wp-content/uploads/2021/02/lynchburg-cake-and-candy-company.png"
+        },
+        {
+          "name": "Promise Manor",
+          "host": "Cindy Carter",
+          "lat": 35.309413388967464,
+          "lng": -86.36114468505639,
+          "blurb": "A young family re-purposed this antebellum mansion as a wedding and event venue, and Cindy Carter finds the old home busy celebrating new beginnings.",
+          "addr": "686 Motlow Barn Rd",
+          "phone": "(931) 247-4457",
+          "site": "promisemanor.com",
+          "siteUrl": "https://www.promisemanor.com/",
+          "link": "https://tennesseecrossroads.org/promise-manor/",
+          "img": "https://tennesseecrossroads.org/wp-content/uploads/2021/02/promise-manor.jpg"
+        }
+      ]
+    },
+    {
+      "key": "tullahoma",
+      "title": "Tullahoma",
+      "intro": "A railroad town with vintage airplanes, gourmet surprises, and whisky spelled the Scotch way in the hollow next door.",
+      "stops": [
+        {
+          "name": "Beechcraft Heritage Museum",
+          "host": "Rob Wilds",
+          "lat": 35.36878363220556,
+          "lng": -86.24463795959913,
+          "blurb": "Rob Wilds tours what may be the country's only museum devoted to a single make of airplane — hangars of gleaming Beechcraft history that draw pilgrims from across the map.",
+          "addr": "570 Old Shelbyville Hwy",
+          "phone": "(931) 455-1974",
+          "site": "beechcraftheritagemuseum.org",
+          "siteUrl": "https://www.beechcraftheritagemuseum.org/",
+          "link": "https://tennesseecrossroads.org/beechcraft-heritage-museum/",
+          "img": "https://tennesseecrossroads.org/wp-content/uploads/2021/02/beechcraft-heritage-museum.jpg"
+        },
+        {
+          "name": "George Dickel Distillery",
+          "host": "Rob Wilds",
+          "lat": 35.4384576,
+          "lng": -86.2461155,
+          "blurb": "In Cascade Hollow north of town, George Dickel has made Tennessee whisky — spelled the Scotch way — since 1870. Rob Wilds follows the craft from spring water to barrel.",
+          "addr": "1950 Cascade Hollow Rd",
+          "phone": "(931) 857-3124",
+          "site": "georgedickel.com",
+          "siteUrl": "https://www.georgedickel.com/",
+          "link": "https://tennesseecrossroads.org/george-dickel-distillery/",
+          "img": "https://tennesseecrossroads.org/wp-content/uploads/2021/02/george-dickel-distillery.jpg"
+        },
+        {
+          "name": "Emil's Bistro & Marketplace",
+          "host": "Joe Elmore",
+          "lat": 35.364146203943264,
+          "lng": -86.20699066009456,
+          "blurb": "A Franco-American romance turned a former mayor's home into some unexpectedly gourmet dining. Joe Elmore meets the husband-and-wife team behind Emil's.",
+          "addr": "210 E Lincoln St",
+          "site": "emilsbistroandlounge.com",
+          "siteUrl": "https://www.emilsbistroandlounge.com/",
+          "link": "https://tennesseecrossroads.org/emils-bistro-marketplace/",
+          "img": "https://tennesseecrossroads.org/wp-content/uploads/2021/02/emils-bistro-marketplace.jpg"
+        }
+      ]
+    },
+    {
+      "key": "shelbyville",
+      "title": "Shelbyville",
+      "intro": "The walking-horse capital — pencil makers, farm stays, and first-Saturday suppers in Bedford County.",
+      "stops": [
+        {
+          "name": "Musgrave Pencils",
+          "host": "Joe Elmore",
+          "lat": 35.485853493602285,
+          "lng": -86.46889742109485,
+          "blurb": "A century on, Musgrave still turns Tennessee cedar into good old wood-case pencils. Joe Elmore visits the Shelbyville factory that has outlasted every trend in technology.",
+          "addr": "701 West Lane St",
+          "phone": "(931) 684-3611",
+          "site": "musgravepencil.com",
+          "siteUrl": "https://musgravepencil.com/",
+          "link": "https://tennesseecrossroads.org/musgrave-pencils/",
+          "img": "https://tennesseecrossroads.org/wp-content/uploads/2021/02/musgrave-pencils.jpg"
+        },
+        {
+          "name": "Clearview Horse Farm",
+          "host": "Gretchen Bates",
+          "lat": 35.4255074,
+          "lng": -86.47804359999999,
+          "blurb": "In the walking-horse capital of the world, this farm bed-and-breakfast is hospitable to humans and horses alike — bring your own mount or just enjoy the pasture views.",
+          "addr": "2291 US-231",
+          "phone": "(931) 684-8822",
+          "site": "clearviewhorsefarm.com",
+          "siteUrl": "http://www.clearviewhorsefarm.com",
+          "link": "https://tennesseecrossroads.org/clearview-horse-farm/",
+          "img": "https://tennesseecrossroads.org/wp-content/uploads/2021/02/clearview-horse-farm.jpg"
+        },
+        {
+          "name": "Flat Creek Community Center",
+          "host": "Tammi Arender",
+          "lat": 35.3890983,
+          "lng": -86.4101841,
+          "blurb": "Flat Creek is barely a dot on the map, seven miles south of Shelbyville — but on the first Saturday of each month it's a hot spot for old-fashioned music and eating.",
+          "addr": "115 New Herman Rd",
+          "phone": "(931) 695-5332",
+          "site": "",
+          "siteUrl": "",
+          "link": "https://tennesseecrossroads.org/flat-creek-community-center/",
+          "img": "https://tennesseecrossroads.org/wp-content/uploads/2021/02/flat-creek-community-center.jpg"
+        },
+        {
+          "name": "Garland King Museum",
+          "host": "Joe Elmore",
+          "blurb": "Some museums defy category, and this one-of-a-kind Shelbyville collection is among them. Joe Elmore takes the tour — watch the segment to see what Garland King keeps inside.",
+          "addr": "Shelbyville",
+          "site": "",
+          "siteUrl": "",
+          "link": "https://tennesseecrossroads.org/garland-king-museum/",
+          "img": "https://tennesseecrossroads.org/wp-content/uploads/2021/07/GarlandKingMuseum0.jpeg"
+        }
+      ]
+    }
+  ]
+}
