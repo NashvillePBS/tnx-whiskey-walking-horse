@@ -230,8 +230,16 @@ def build():
     tx = cx0 + bb.IN(2.2)
     rib, rw, rh = svg_ribbon(tx, cart[1]+bb.IN(0.34), bb.GUIDE["eyebrow"].upper(), 8)
     c += rib
-    c.append(text_el(tx, cart[1]+bb.IN(0.78), bb.GUIDE.get("printTitle1", "A Traveler's Guide"), OS, PX(24), H(bb.TNX_BLUE), weight="800"))
-    c.append(text_el(tx, cart[1]+bb.IN(1.18), bb.GUIDE.get("printTitle2", f"to {bb.CITY}"), OS, PX(24), H(bb.TNX_RED), weight="800"))
+    pt1 = bb.GUIDE.get("printTitle1", "A Traveler's Guide")
+    pt2 = bb.GUIDE.get("printTitle2", f"to {bb.CITY}")
+    cart_w = cart[2] - tx - bb.IN(0.25)
+    def fit_pt(text, start=24, mn=14):
+        p = start
+        while p > mn and tlen(text, bb.OSXB(p)) > cart_w:
+            p -= 0.5
+        return p
+    c.append(text_el(tx, cart[1]+bb.IN(0.78), pt1, OS, PX(fit_pt(pt1)), H(bb.TNX_BLUE), weight="800"))
+    c.append(text_el(tx, cart[1]+bb.IN(1.18), pt2, OS, PX(fit_pt(pt2)), H(bb.TNX_RED), weight="800"))
     ry = cart[1]+bb.IN(1.85)
     dots = "".join(f'<circle cx="{tx+i*bb.IN(0.115):.0f}" cy="{ry}" r="4" fill="{H(bb.TNX_BLUE)}"/>' for i in range(28))
     c.append(f'<g>{dots}<circle cx="{tx+4}" cy="{ry}" r="14" fill="{H(bb.TNX_RED)}"/>'

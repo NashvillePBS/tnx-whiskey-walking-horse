@@ -154,6 +154,15 @@ def paste_logo(img, path, x, y, w):
 def rounded(draw, box, r, **kw):
     draw.rounded_rectangle(box, radius=r, **kw)
 
+
+def fit_font(draw, text, font_fn, start_pt, max_w, min_pt=14):
+    """Largest font (<= start_pt) at which text fits max_w. Route titles
+    overflowed the fixed sizes (leak confirmed by three route builds)."""
+    pt = start_pt
+    while pt > min_pt and draw.textlength(text, font=font_fn(pt)) > max_w:
+        pt -= 0.5
+    return font_fn(pt)
+
 # ------------------------------------------------------------------- roads --
 def draw_geo(img, draw, w=CW, h=CH, west=WEST, east=EAST, south=SOUTH, north=NORTH, scale=1.0):
     P = lambda lat, lng: proj(lat, lng, w, h, west, east, south, north)
@@ -293,8 +302,9 @@ def render_front():
     ribbon(d, tx, cart[1]+IN(0.34), GUIDE["eyebrow"].upper(), RB(8))
     pt1 = GUIDE.get("printTitle1", "A Traveler's Guide")
     pt2 = GUIDE.get("printTitle2", f"to {CITY}")
-    d.text((tx, cart[1]+IN(0.78)), pt1, font=OSXB(24), fill=TNX_BLUE)
-    d.text((tx, cart[1]+IN(1.18)), pt2, font=OSXB(24), fill=TNX_RED)
+    cart_w = cart[2] - tx - IN(0.25)
+    d.text((tx, cart[1]+IN(0.78)), pt1, font=fit_font(d, pt1, OSXB, 24, cart_w), fill=TNX_BLUE)
+    d.text((tx, cart[1]+IN(1.18)), pt2, font=fit_font(d, pt2, OSXB, 24, cart_w), fill=TNX_RED)
     # route motif
     ry = cart[1]+IN(1.85)
     for i in range(28):
@@ -524,10 +534,12 @@ def render_back():
     yy += IN(0.62)
     t1 = GUIDE.get("printTitle1", "A Traveler's Guide")
     t2 = GUIDE.get("printTitle2", f"to {CITY}")
-    f1 = OSXB(22)
-    d.text((cx+(PANEL_W-d.textlength(t1, font=f1))/2, yy), t1, font=f1, fill=TNX_BLUE)
+    cover_w = PANEL_W - 2*IN(0.5)
+    f1a = fit_font(d, t1, OSXB, 22, cover_w)
+    f1b = fit_font(d, t2, OSXB, 22, cover_w)
+    d.text((cx+(PANEL_W-d.textlength(t1, font=f1a))/2, yy), t1, font=f1a, fill=TNX_BLUE)
     yy += IN(0.42)
-    d.text((cx+(PANEL_W-d.textlength(t2, font=f1))/2, yy), t2, font=f1, fill=TNX_RED)
+    d.text((cx+(PANEL_W-d.textlength(t2, font=f1b))/2, yy), t2, font=f1b, fill=TNX_RED)
     yy += IN(0.62)
     ry = yy
     n_dots, dot_span = 16, IN(0.115)
